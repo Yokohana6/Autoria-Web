@@ -1,0 +1,27 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+}
+header {
+   background-color: black;
+   color:white;
+   text-align: center;
+}*/
+header {
+    display: flex;
+    flex-direction: row;
+    max-height: 600px;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: flex-start;
+
+}
+header p {
+    font-size: 3rem;
+}
+img {
+    max-width: 200px;
+    max-height: 150px;
+}
+
+
