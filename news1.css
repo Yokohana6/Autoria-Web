@@ -1,27 +1,66 @@
-/* *{
+*{
     margin: 0px;
     padding: 0px;
 }
-header {
-   background-color: black;
-   color:white;
-   text-align: center;
-}*/
-header {
-    display: flex;
-    flex-direction: row;
-    max-height: 600px;
-    flex-wrap: wrap;
-    gap: 100px;
-    justify-content: flex-start;
-
-}
-header p {
+ p {
     font-size: 3rem;
 }
 img {
     max-width: 200px;
     max-height: 150px;
 }
-
-
+body {
+    background-color: rgb(0, 255, 34);
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(251, 255, 2);
+    color: rgb(7, 23, 252);
+   }
+   .navegador a {
+    color: rgb(7, 23, 255);
+   }
+   
+   .itens {
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+   }
+   .itens li:hover {
+    background-color: #00ff0d;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .itens li {
+    padding: 5px 14px;
+    list-style-type: none;
+   }
+  
+   .services {
+    position: relative; 
+   }
+   .barra {
+    background-color: rgb(253, 253, 253);
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .barra li + li {
+    margin-top: 10px;
+   }
+   .barra li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .barra li:hover {
+    background-color: #00e1ff;
+   }
+   .services:hover .barra {
+    display: block;
+   }
