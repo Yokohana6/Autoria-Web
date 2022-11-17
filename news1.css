@@ -42,14 +42,14 @@ body {
    .services {
     position: relative; 
    }
-   .barra {
+   /** .barra {
     background-color: rgb(253, 253, 253);
     padding: 1em 0;
     position: absolute; 
     display: none;
     border-radius: 8px;
     top: 35px;
-   }
+   } 
    .barra li + li {
     margin-top: 10px;
    }
@@ -59,8 +59,26 @@ body {
     text-align: center;
    }
    .barra li:hover {
-    background-color: #00e1ff;
-   }
+    background-color: #00e1ff; 
+   } **/
    .services:hover .barra {
     display: block;
+   }
+
+   .pesquisar {
+     position: absolute;
+     top: 6%;
+     left: 75%;
+     transform: translate(-5% , -5%);
+    height: 35px;
+    padding: 15px;
+    background: #00ff0d;
+    border-radius: 2px;
+   }
+   .txt {
+    background-color: rgb(251, 255, 0);
+    padding: 10%;
+    
+
+
    }
