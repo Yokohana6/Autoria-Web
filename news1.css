@@ -42,25 +42,7 @@ body {
    .services {
     position: relative; 
    }
-   /** .barra {
-    background-color: rgb(253, 253, 253);
-    padding: 1em 0;
-    position: absolute; 
-    display: none;
-    border-radius: 8px;
-    top: 35px;
-   } 
-   .barra li + li {
-    margin-top: 10px;
-   }
-   .barra li {
-    padding: 0.5em 1em;
-    width: 8em;
-    text-align: center;
-   }
-   .barra li:hover {
-    background-color: #00e1ff; 
-   } **/
+   
    .services:hover .barra {
     display: block;
    }
