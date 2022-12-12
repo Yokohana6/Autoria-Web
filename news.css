@@ -33,5 +33,69 @@ header {
     background-color: var(--verde);
     background: var(--cor-mesclada);
     padding: 1em;
-   
+    color: var(--branco);
+    text-align: center; 
+}
+section {
+    padding: 0.5em;
+}
+article:hover {
+    box-shadow:  0 0 8px rgba(0, 0, 0, 0.4);
+}
+section article {
+    border: 1px solid var(--verde);
+    margin: 0.5em;
+}
+section article img {
+    width: 100%;
+}
+section article h1{
+    color: var(--verde);
+}
+section article p{
+    color: var(--marrom);
+    margin: 10px;
+}
+figcaption {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: var(--cinza);
+    margin: 0px 10px 0px 10px;
+}
+footer{
+    background-color: var(--verde);
+    background: var(--cor-mesclada);
+    padding: 1.5em 0.5em;
+    text-align: center;
+    color: var(--branco);
+}
+footer p{
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0.5em 0;
+}
+@media  screen and(min-width: 480px){
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and( min-width: 640px){
+    section{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and(min-width: 1024px){
+  section{
+    max-width: 1000px;
+    margin: auto;
+  }  
+}
+@media screen and(min-width: 1440px){
+    section{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 1400px;
+        margin: auto;
+    }
 }

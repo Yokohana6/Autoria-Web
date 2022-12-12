@@ -1,66 +1,106 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0%;
+  padding: 0%;
 }
- p {
-    font-size: 3rem;
+p {
+  font-size: 3rem;
 }
 img {
-    max-width: 200px;
-    max-height: 150px;
+  max-width: 200px;
+  max-height: 150px;
 }
 body {
-    background-color: rgb(0, 255, 34);
+  background-color: rgb(0, 255, 34);
 }
 .navbar {
     display: flex;
-    align-items: center;
+    align-items: center;   
     justify-content: space-between;
     padding: 20px;
-    background-color: rgb(251, 255, 2);
+    background-color:rgb(251, 255, 2);
     color: rgb(7, 23, 252);
-   }
-   .navegador a {
-    color: rgb(7, 23, 255);
-   }
-   
-   .itens {
+}
+    
+.nav-links a {
+    color:rgb(7, 23, 255);
+}
+
+.logo {
+    font-size: 32px;
+}
+.menu {
     display: flex;
     gap: 1em;
-    font-size: 20px;
-   }
-   .itens li:hover {
-    background-color: #00ff0d;
+    font-size: 18px;
+}
+
+.menu li:hover {
+    background-color:  #00ff0d;
     border-radius: 5px;
     transition: 0.3s ease;
-   }
-   .itens li {
+}
+.menu li {
     padding: 5px 14px;
-    list-style-type: none;
-   }
-  
-   .services {
-    position: relative; 
-   }
-   
-   .services:hover .barra {
-    display: block;
-   }
-
-   .pesquisar {
-     position: absolute;
-     top: 6%;
-     left: 75%;
-     transform: translate(-5% , -5%);
-    height: 35px;
-    padding: 15px;
-    background: #00ff0d;
-    border-radius: 2px;
-   }
-   .txt {
-    background-color: rgb(251, 255, 0);
-    padding: 10%;
+}
     
+.services {
+  position: relative;
+}
 
 
-   }
+.txt {
+  background-color: rgb(251, 255, 0);
+  height: 1.5rem;
+  width: 10%;
+  padding: 8px;
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  transform: translate(-4%, -4%);
+  background: #00ff0d;
+  border-radius: 2px;
+}
+
+li {
+  list-style: none;
+}
+input[type=checkbox]{
+    display: none;
+}
+    
+.hamburger {
+    display: none; 
+    font-size: 24px;
+    user-select: none;
+}
+@media (max-width: 768px) {
+
+.menu {
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+}
+    
+.menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 0.3s ease;
+}
+
+.menu li + li {
+    margin-top: 12px;
+
+}
+    
+input[type=checkbox]:checked ~ .menu{
+    display: block;
+}
+    
+.hamburger {
+    display: block;
+}
+}
